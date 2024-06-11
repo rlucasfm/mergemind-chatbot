@@ -7,7 +7,7 @@ client = OpenAI()
 assistant_id = "asst_m71G67XOUmf8ZDQz2yZhlEfK"
 thread = client.beta.threads.create()
 
-image = Image.open('mm-logo2.png')
+image = Image.open('mm-logo3.png')
 
 st.image(image)
 
