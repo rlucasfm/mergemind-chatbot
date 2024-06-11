@@ -12,7 +12,8 @@ image = Image.open('mm-logo2.png')
 st.image(image)
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "Quer saber como usar IA na sua empresa? Fala comigo!"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": """Bem-vindo! Eu sou o MergeMind, um cérebro artificial pronto pra te ajudar a entender um pouco mais sobre IA. 
+                                     \nSou uma criação da MergeMind, feito por Richard Lucas. Caso queira saber mais, mande um DM para meu criador: https://www.instagram.com/richard.lucasfm/."""}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
